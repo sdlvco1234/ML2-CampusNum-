@@ -1,0 +1,37 @@
+1) What are the necessary preprocessing steps regarding:
+a) classes ?
+Vérifier les NaN, doublons ou autres artefacts 
+
+b) categorical features ? 
+Création d'un dataframe Dummed pour prendre en compte l'ensemble des mutlicatégories de façon binaire
+
+c) continuous features ?
+Utilisation de la méthode StandardScale() pour standardiser les valeurs. 
+
+2) Confusion matrix:
+a)How many patient were incorrectly diagnosed with a Heart disease (false positives) ?
+
+Le nombre de faux positifs est de 5 personnes 
+
+b)How many patient were incorrectly diagnosed as being Healthy (false negatives)?
+
+le nombre de faux négatifs est de 8 personnes 
+
+
+3) Changing the threshold:
+a)What is the precision if we change the threshold to have a 0.95 recall ? 
+
+Le score de precision sera d'environ 57 % 
+
+b) How many patient were incorrectly diagnosed as being Healthy (false negatives)?
+
+2 personnes seront diagnostiquées faux négatifs 
+
+
+4) Choosing an overall metric:
+
+a) If I can compute my test sample probabilities and care more about the positive class, which overall metric should I use to compare classifiers ? 
+ROC-AUC
+
+b) And if I only have the class predictions and no probabilities ?
+Accuracy
